@@ -14,8 +14,8 @@ try:
     df_scot = pd.read_csv(csv_url_scotland)
     df_eng = pd.read_csv(csv_url_england)
     st.header("Scotland:")
-    st.dataframe(df_scot)
+    st.table(df_scot)
     st.header("England:")
-    st.dataframe(df_eng)
+    st.table(df_eng)
 except pd.errors.ParserError:
     st.error("Failed to parse CSV file. Please make sure the URL is correct.")
