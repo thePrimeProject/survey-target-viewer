@@ -3,6 +3,7 @@
 import streamlit as st
 import streamlit.components.v1 as components
 import pandas as pd
+st.set_page_config(page_title="PRIME",page_icon=None,layout="wide")
 
 st.title("Current Confirmed Targets")
 
